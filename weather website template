@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .search-box {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        h2 {
+            font-weight: bold;
+        }
+        .current-weather, .weather-details {
+            margin-top: 10px;
+        }
+        .temp-bold {
+            font-weight: bold;
+        }
+        .daily-forecast {
+            margin-top: 20px;
+        }
+        .daily-forecast ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .daily-forecast li {
+            margin-bottom: 15px;
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .footer a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-box">
+        <input type="text" id="city" placeholder="Enter a city">
+        <button onclick="searchWeather()">Search</button>
+    </div>
+
+    <h2>Greytown</h2>
+    <p class="current-weather">Current weather: There will be mostly sunny skies. The high temperature will be <span class="temp-bold">80°F.</span> <span class="temp-bold">29°C</span>.</p>
+    <p class="weather-details">Humidity: <span class="temp-bold">29°C</span>, wind <span class="temp-bold">7 mph</span></p>
+    <p class="temp-bold">29°C ☀️</p>
+
+    <div class="daily-forecast">
+        <ul>
+            <li>
+                <strong>Sunday</strong> ☁️🌤️
+                <p><span class="temp-bold">16°C</span>-19°C</p>
+            </li>
+            <li>
+                <strong>Monday</strong> 🌤️
+                <p><span class="temp-bold">16°C</span>-19°C</p>
+            </li>
+            <li>
+                <strong>Tuesday</strong> 🌤️
+                <p><span class="temp-bold">16°C</span>-19°C</p>
+            </li>
+            <li>
+                <strong>Wednesday</strong> 🌤️
+                <p><span class="temp-bold">16°C</span>-19°C</p>
+            </li>
+            <li>
+                <strong>Thursday</strong> 🌤️
+                <p><span class="temp-bold">16°C</span>-19°C</p>
+            </li>
+            <li>
+                <strong>Friday</strong> 🌤️
+                <p><span class="temp-bold">16°C</span>-19°C</p>
+            </li>
+            <li>
+                <strong>Saturday</strong> 🌤️
+                <p><span class="temp-bold">16°C</span>-19°C</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>Coded by Andiswa Zakwe and is on <a href="https://github.com/Dana-Zakwe/Weather-website" target="_blank">GitHub</a></p>
+    </div>
+
+    <script>
+        function searchWeather() {
+            const city = document.getElementById('city').value;
+            alert('You searched for weather in: ' + city);
+            // Additional functionality to fetch and display weather information can be added here
+        }
+    </script>
+
+</body>
+</html>
